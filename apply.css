@@ -1,0 +1,72 @@
+*{
+  outline: none;
+}
+body{
+  background-image:-webkit-linear-gradient( top left,rgba(186, 185, 185, 0.5),rgba(98, 36, 59, 0.5) );
+}
+
+  form{
+  width: 70%;
+  background-color:#fffaf0 ;
+  margin: 0 auto;
+}
+fieldset{
+  border: none;
+  margin-bottom: 6%;
+}
+legend{
+  background-color:#e96651;
+}
+label{
+  text-align: right;
+  font-size: 120%;
+}
+input{
+  margin: 3% 0;
+  width: 70%;
+  border: 1px solid #555;
+  padding: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
