@@ -141,6 +141,13 @@ grid-template: repeat(8,1fr);
 margin:  -9% 0 0 0;
 padding: 0 2% 0 8%;
 }
+
+#about h1{
+  border-bottom: 1px solid #b3c8cd;
+padding-bottom: 1%;
+  width: 70%;
+  margin: 0 auto;
+}
 .about-text{
   grid-column: 1/6;
   padding:  12% 5% 0 5%;
@@ -433,7 +440,9 @@ transition-duration: 2s;
 
 
   #courses button{
-    width: 25%;
+    width: 30%;
+    font-size: 120%;
+    font-weight: bold;
   }
 
 
@@ -619,7 +628,7 @@ transition-duration: 2s;
   box-sizing: border-box;
   display:block;
    width: 100%;
-   margin: 45% 0 0 0;
+   margin: 50% 0 0 0;
    padding:  0 5% ;
   font-size: 100%;
      line-height: 120%;
@@ -647,7 +656,7 @@ transition-duration: 2s;
   }
 
 #courses i{
-  font-size: 70%;
+
 }
 
   #courses button{
