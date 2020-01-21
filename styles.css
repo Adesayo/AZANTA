@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');*{
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+
+*{
   outline:none;
-  box-sizing:  border-box;
+
 }
 button{
   font-family: 'Baloo Bhai', cursive;
 }
   body {
   width: 100%;
+  box-sizing: border-box;
   margin:0;
   padding:0;
   font-family: 'Crimson Text', serif;
@@ -27,56 +30,56 @@ ont-family: 'Baloo Bhai', cursive;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fffaf0;
+
 }
 .logo{
   color: #faebd7;
-  font-size:60%;
+  font-size:120%;
   font-family: 'Caveat', cursive;
-  padding:0 2%;
-  flex: 1;
-}
-.left{
-  position:relative;
-  left: 40px;
-  padding-top:-3% ;
-}
-nav{
-  display: flex;
+  padding: ;
+  margin: -2% 0 0 1%;
+
 }
 
 .menu{
-  width: 70%;
-margin-right: 0;
-padding-right: 0;
-text-align: center;
-flex: 4;
+margin-top: -6%;
+ }
+ .menu li{
+ float:right;
+  display: inline-block;
+  margin: 0;
+ }
+
+.menu li:last-child {
+margin-right: 1%;
+
+}
+.menu button{
+ background-color: #6e243b;
+ border: 2px solid #8e2648;
+ box-sizing: border-box;
+ padding: 2%;
+ transition: all 2s;
 }
 
-.menu li{
-display:  inline-block;
-padding: 2%;
-text-align: right;
-
+.menu button:hover, .menu button:active{
+  background-color:#e96651;
 }
 .menu a{
   text-decoration: none;
   text-transform: uppercase;
-  margin-bottom: 2%;
-   color: #fffaf0;
-  transition-property: border;
-  transition-duration: 2s;
-}
-.menu a:hover{
-  border-bottom: 2px solid #fff;
-}
-.intro{
+  width: 35px;
+  color: #fffaf0;
+  font-weight:bold;
+
+ }
+
+ .intro{
   clear: both;
   text-align: center;
-
   padding: 15% 0;
 }
-
-.intro button{
+ .intro button{
   display: inline-block;
   width: 18%;
   height: 25%;
@@ -87,8 +90,8 @@ text-align: right;
   border: 1px solid #faebd7;;
   border-radius: 1em;
   background-image: -webkit-linear-gradient(top left, #bab9b9, #8e2629);
-  -webkit-transition-property: background-image, border-radius, border;
-  -webkit-transition-duration: 2s, 3s;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 2s;
 }
 .intro button:hover,.intro button:active
 {
@@ -109,12 +112,13 @@ text-align: right;
   height: 300px;
   color: #fff;
   text-align: center;
-  padding-top: ;
+   padding: 0;
   margin: -5% auto 10% auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 .feature-1{
+
   padding: 25% 5%;
   background-color: #6e243b;
 }
@@ -123,7 +127,6 @@ text-align: right;
   padding:25% 5%;
   background-color: #8e2648;
 }
-
 .feature-3{
   padding: 25% 5%;
   background-color: #b02451;
@@ -131,12 +134,12 @@ text-align: right;
 
 #about{
   background-color: rgba(211,211,211,0.1);
-
+box-sizing: border-box;
 display: grid;
 grid-template: repeat(8,1fr);
   width: 100%;
-margin:  -9% auto 0 auto;
-padding: 20% 8% 0 8;;
+margin:  -9% 0 0 0;
+padding: 0 2% 0 8%;
 }
 .about-text{
   grid-column: 1/6;
@@ -146,34 +149,30 @@ padding: 20% 8% 0 8;;
    line-height: 170%;
 }
 .about-img{
-  grid-column:6/9;
-  grid-row:1/-1;
-
+  grid-column:7/9;
+  grid-row: 1/-1;
 }
 .about-img img {
-width: 100%;
+width: 90%;
 object-fit: contain;
 }
 
 #courses{
   display: grid;
+  box-sizing: border-box;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 3%;
+  grid-gap: 1%;
   text-align: center;
   margin: 0;
-  padding:4% 0;
+  padding:4%;
   background-color: rgba(186,185,185,0.1);
 }
 
 i{
   color:#6e243b;
 
-  border: 5px solid #bab9b9;
-  width: 100px;
-  height: 100px;
   border-radius: 50%;
-  padding: 4%;
-  box-sizing: content-box;
+
 }
 
 #courses button{
@@ -216,7 +215,7 @@ i{
 
 #contact form{
   grid-column: 4/9;
-  width: 100%;
+  width: 90%;
 }
 #contact input,textarea{
   width: 80%;
@@ -258,6 +257,7 @@ textarea{
   background-color:#555;
   color: #fffaf0;
   padding: 7% 1%;
+  margin: 0;
   text-align: center;
    box-sizing: border-box;
   display: grid;
@@ -266,20 +266,20 @@ textarea{
 #footer i{
   color:#6e243b;
 
-  border: 5px solid #bab9b9;
+  border: 3px solid #bab9b9;
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  padding: 1%;
-  box-sizing: border-box;
+  padding: 3%;
+  box-sizing:  ;
 }
 
 
 #footer li{
-  margin-left:-45px;
+    margin-left:-45px;
   padding:2% 0;
 }
-.footer-div{
+.footer-div,.newsletter{
 width: 90%;
 }
 #footer a{
@@ -288,16 +288,10 @@ width: 90%;
   font-weight: bold;
   text-align: center;
 }
-#footer a:hover{
+#footer a:hover,#footer a:active {
   text-decoration: underline;
-  color: #00008b;
 }
 
-
-#footer a:active{
-  text-decoration: underline;
-  color: #00008b;
-}
 
 
  #footer h3{
@@ -341,20 +335,389 @@ transition-duration: 2s;
   border-top: 1px solid #fff;
   grid-column: 1/-1;
   padding-top: 5%;
-  margin-top: 5%;
+  margin:5% 0;
 }
 
 
+@media (min-width:481px) and (max-width:768px)  {
+  #head{
+    height: 600px;
+    background: linear-gradient(rgba(99,36,59, 0.4),rgba(142, 38, 72, 0.4)),url("st.jpeg");
+  }
+
+  .logo{
+    font-size:100%;
+    margin: -2% 0 0 1%;
+}
+
+  .menu{
+  margin-top: -10%;
+   }
+
+   .menu li{
+   float:right;
+    display: block;
+    margin: 0;
+   }
+
+
+  .menu button{
+   display: block;
+ }
+
+  .menu a{
+    width: 35px;
+  }
+
+.intro h1{
+  width: 80%;
+  padding-top: 10%;
+
+  margin: 0 auto;
+}
+   .intro button{
+    padding:2%;
+  }
+
+
+   #features{
+    width: 90%;
+    display: block;
+    margin: -15% auto 10% auto;
+  }
+
+  .feature-1{
+
+    padding:5%;
+    background-color: #6e243b;
+  }
+
+  .feature-2{
+    padding:5%;
+    background-color: #8e2648;
+  }
+  .feature-3{
+    padding:5%;
+    background-color: #b02451;
+  }
+
+  #about{
+    background-color:#fff;
+  box-sizing: border-box;
+  display:block;
+   width: 100%;
+   margin: 25% 0 0 0;
+   padding:  0 5% ;
+  font-size: 110%;
+     line-height: 170%;
+  }
+  .about-text{
+    text-align: center;
+  }
+  .about-img{
+  display: none;
+  }
+
+
+  #courses{
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1%;
+    text-align: center;
+    margin: 0;
+    padding:4%;
+    background-color:  rgba(211,211,211,0.1);
+  }
 
 
 
+  #courses button{
+    width: 25%;
+  }
+
+
+  #contact{
+    height: 60vh;
+  }
+
+  #contact .text{
+    padding: 0 1% 0 3%;
+  }
+
+  #contact .text p{
+    font-size: 120%;
+    line-height: 200%;
+    padding-top: 3%;
+  }
+
+  #contact form{
+    padding-top: 15%;
+    width: 100%;
+  }
+  #contact input,textarea{
+    width:90%;
+    height: 8%;
+  }
+
+  #contact form button{
+    margin-top: 10%;
+    width: 30%;
+    height: 7%;
+    font-weight: bold;
+    border-radius: 1em;
+}
+
+  #footer{
+    background-color:#555;
+    color: #fffaf0;
+    padding: 7% 1%;
+    margin: 0;
+    text-align: center;
+     box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  #footer i{
+    color:#6e243b;
+
+    border: 3px solid #bab9b9;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    padding: 3%;
+    box-sizing:  ;
+  }
+
+
+  #footer li{
+      margin-left:-45px;
+    padding:2% 0;
+  }
+  .footer-div,.newsletter{
+  width: 90%;
+  }
+  #footer a{
+    text-decoration: none;
+    color:  #fff;
+    font-weight: bold;
+    text-align: center;
+  }
+  #footer a:hover,#footer a:active {
+    text-decoration: underline;
+  }
 
 
 
+   #footer h3{
+  margin: 0;
+  padding: 0;}
 
 
 
+  .newsletter input{
+  margin: 3% auto;
+  width:100%;
+  height:8%;
+  padding: 2%;
+  border:1px solid #6e243b;
+  transition-property: all;
+  transition-duration: 2s;
+  }
 
+  .newsletter input:focus{
+    background-color:rgba(176,36,81,0.2);
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  .newsletter button{
+    border: 2px solid #fff;
+    border-radius: 2em;
+    padding:2% 3%;
+    color: #fff;
+    background-color: #6e243b;
+    transition: all 2s;
+  }
+  .newsletter button:hover, .newsletter button:active{
+    transform: scale(1.2,1.4);
+    -m-transform: scale(1.2,1.4);
+    -ms-transform: scale(1.2,1.4);
+    -webkit-transform: scale(1.2,1.4);
+    -o-transform: scale(1.2,1.4);
+  }
+
+  .social{
+    border-top: 1px solid #fff;
+    grid-column: 1/-1;
+    padding-top: 5%;
+    margin:5% 0;
+  }
+
+
+}
+
+@media(max-width:480px) {
+  #head{
+    height: 500px;
+    background: linear-gradient(rgba(99,36,59, 0.4),rgba(142, 38, 72, 0.4)),url("st.jpeg");
+  }
+
+  .logo{
+    font-size:70%;
+    margin: -2% 0 0 1%;
+}
+
+  .menu{
+  margin-top: -10%;
+  float: right;
+
+   }
+
+   .menu li{
+     display: none;
+   float:none;
+    margin:5% 0;
+   }
+
+
+.intro h1{
+  width: 80%;
+  padding-top: 10%;
+
+  margin: 0 auto;
+}
+   .intro button{
+     margin-top: 10%;
+    padding:2%;
+    width: 30%;
+  }
+
+
+   #features{
+    width: 90%;
+    display: block;
+    margin: -15% auto 10% auto;
+  }
+
+  .feature-1{
+
+    padding:5%;
+    background-color: #6e243b;
+  }
+
+  .feature-2{
+    padding:5%;
+    background-color: #8e2648;
+  }
+  .feature-3{
+    padding:5%;
+    background-color: #b02451;
+  }
+
+  #about{
+    background-color:#fff;
+  box-sizing: border-box;
+  display:block;
+   width: 100%;
+   margin: 35% 0 0 0;
+   padding:  0 5% ;
+  font-size: 100%;
+     line-height: 120%;
+  }
+  .about-text{
+    text-align: center;
+  }
+  .about-img{
+  display: none;
+  }
+
+
+  #courses{
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1%;
+    text-align: center;
+    margin: 0;
+    padding:4%;
+    background-color:  rgba(211,211,211,0.1);
+  }
+
+
+
+  #courses button{
+    width: 25%;
+  }
+
+
+  #contact{
+    height: 80vh;
+    display: block;
+  }
+
+  #contact .text{
+    padding: 0 1% 0 3%;
+  }
+
+  #contact .text p{
+    font-size: 100%;
+    line-height: 120%;
+    padding-top: 3%;
+    text-align: center;
+  }
+
+  #contact form{
+    margin: 0 auto;
+
+    width: 90%;
+  }
+  #contact input,textarea{
+    width:90%;
+    padding: 5% 2%;
+
+  }
+
+  #contact form button{
+    margin-top: 10%;
+    width: 30%;
+    height: 7%;
+    font-weight: bold;
+    border-radius: 1em;
+}
+
+  #footer{
+    background-color:#555;
+    color: #fffaf0;
+    padding: 7% 1%;
+    margin: 0;
+    text-align: center;
+     box-sizing: border-box;
+    display: block;
+  }
+
+
+   .footer-div,.newsletter{
+  width: 90%;
+  margin:10% auto 0 auto;
+  }
+
+  .newsletter input{
+  margin: 3% auto;
+  width:80%;
+  height:8%;
+  padding: 2%;
+}
+
+
+  .social{
+    border-top: 1px solid #fff;
+    grid-column: 1/-1;
+    padding-top: 5%;
+    margin:5% 0;
+  }
+
+
+}
 
 
 
