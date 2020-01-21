@@ -596,7 +596,7 @@ transition-duration: 2s;
    #features{
     width: 90%;
     display: block;
-    margin: -15% auto 10% auto;
+    margin: -15% auto 18% auto;
   }
 
   .feature-1{
@@ -638,20 +638,24 @@ transition-duration: 2s;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1%;
     text-align: center;
-    margin: 0;
+    margin-bottom:10%;
     padding:4%;
     background-color:  rgba(211,211,211,0.1);
+  }
+  .course{
+    width: 85%;
   }
 
 
 
   #courses button{
     width: 25%;
+    margin-bottom: 5%;
   }
 
 
   #contact{
-    height: 80vh;
+    height: 90vh;
     display: block;
   }
 
@@ -678,7 +682,7 @@ transition-duration: 2s;
   }
 
   #contact form button{
-    margin-top: 10%;
+     margin-top: 5%;
     width: 30%;
     height: 7%;
     font-weight: bold;
