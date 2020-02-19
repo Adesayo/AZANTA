@@ -30,18 +30,15 @@ font-family: 'Dosis', sans-serif;
 }
 
 #head{
-height: 10vh;
+height: 7vh;
 background-color: #593440;
+margin-bottom:  ;
 
 }
 
-
-.menu{
-margin-top:-5%;
-padding-top:  ;
-
-}
-
+ .menu ul{
+   margin: 0;
+ }
  .menu li{
  float:right;
   display: inline-block;
@@ -54,12 +51,13 @@ margin-right: 5px;
 
 }
 .menu button{
+  margin: 0;
   box-sizing: border-box;
   font-size: 70%;
  background-color: #ddc1c6;
  border: 2px solid #8e2648;
  height: 7vh;
- padding: 2%;
+ padding:0 2%;
  transition: all 2s;
 }
 
@@ -167,7 +165,7 @@ padding-bottom: 1%;
  #start{
    height:auto;
    background-color: rgba(180, 186, 190, 0.1);
-   padding: 4% 10%;
+   padding: 3% 10%;
    box-sizing: border-box;
  }
   #start h2{
@@ -232,11 +230,12 @@ line-height:70px;
   padding: 1% 0;
  border: none;
  border-radius: 5em;
- margin: 0 auto;
+ margin: 0 0 0 50%;
  }
 
  #campuses{
    clear: both;
+   box-sizing: border-box;
  display: grid;
  padding: 2% 5%;
  margin: 0;
@@ -314,7 +313,7 @@ border-radius:50%;
   grid-gap: 4%;
   height: auto;
   background:linear-gradient(rgba(122, 76, 82, 0.2), rgba(221, 193, 198, 0.2)),url("ad.jpeg");
-  padding-top:5%;
+  padding:5% 0;
 }
 #contact .text{
 
@@ -336,12 +335,13 @@ border-radius:50%;
 #contact form{
   grid-column: 4/9;
   width: 90%;
+  margin-top: 5%;
 }
 #contact input,textarea{
   width: 80%;
   height: 8%;
   margin:3% auto;
-  padding-left: 2%;
+  padding:2% 1%;
   transition-property: all;
   transition-duration: 2s;
 }
@@ -354,8 +354,9 @@ border-radius:50%;
 }
 
 textarea{
+  padding: 8% 2%;
   resize: none;
-  height: 19%;
+  height: 25%;
 }
 
 #contact form button{
@@ -363,7 +364,8 @@ textarea{
   height: 7%;
   font-weight: bold;
   border-radius: 1em;
-
+  padding: 2% 1%;
+  margin-left: 50%;
   background-color: #706073;
   color: #fff;
   transition-property: all;
@@ -745,6 +747,7 @@ transition-duration: 2s;
   #start button{
 
   width: 35%;
+  padding: 4%;
 }
 
    #campuses{
@@ -757,7 +760,7 @@ transition-duration: 2s;
    }
 
    #campuses h2{
-    font-size: 80%;
+    font-size:;
    }
 
    .campus{
@@ -790,6 +793,8 @@ transition-duration: 2s;
 }
 #contact .text{
  width: 90%;
+ padding-left: 10%;
+
 text-align:center;
 line-height: 120%;
 }
@@ -797,7 +802,6 @@ line-height: 120%;
 #contact .text p{
   text-align: center;
 font-size: 100%;
-padding-left: 10%;
 margin: 0 auto;
 }
 
@@ -811,18 +815,20 @@ padding-left: 5%;
 width: 90%;
 height: 10%;
 margin:3% auto;
-padding-left: 2%;
+ padding: 4% 2%;
 }
 
 textarea{
 resize: none;
 height: 25%;
+padding: 8% 2%;
 }
 
 #contact form button{
 width: 30%;
 display: block;
-margin: 0 auto;
+margin: 0 0 0 55%;
+padding: 4%;
 text-align: center;
 height: 7%;
 }
