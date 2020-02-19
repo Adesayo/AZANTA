@@ -1,13 +1,12 @@
-\
-@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
-
+ @import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Tomorrow&display=swap');
 *{
   outline:none;
 }
 
 button{
-  font-family: 'Baloo Bhai', cursive;
+  font-family: 'Tomorrow', sans-serif;
 }
   body {
   width: 100%;
@@ -27,7 +26,7 @@ li{
 
 }
 h1,h2,h3,h4{
-ont-family: 'Baloo Bhai', cursive;
+font-family: 'Dosis', sans-serif;
 }
 
 #head{
@@ -77,7 +76,7 @@ margin-right: 5px;
  }
 
 #intro{
-  box-sizing: border-box;
+  box-sizing:  ;
   height:700px;
   background: linear-gradient(rgba(89,62,64, 0.4),rgba(112, 96, 115, 0.4)),url("st.jpeg");
   background-repeat: no-repeat;
@@ -85,7 +84,8 @@ margin-right: 5px;
   color: #fffaf0;
   clear: both;
   text-align: center;
-  padding: 15% 0;
+  padding: 35% 0 0 0;
+  text-transform: uppercase;
 
 }
 
@@ -167,7 +167,7 @@ padding-bottom: 1%;
  #start{
    height:auto;
    background-color: rgba(180, 186, 190, 0.1);
-   padding: 1% 10%;
+   padding: 4% 10%;
    box-sizing: border-box;
  }
   #start h2{
@@ -495,7 +495,7 @@ transition-duration: 2s;
 
   #intro{
     height:800px;
-    padding: 35% 0;
+    padding: 35% 0 0 0;
    }
   #intro button{
     width: 23%;
@@ -631,7 +631,7 @@ transition-duration: 2s;
 @media(max-width:480px) {
   #head{
     margin-top: -3%;
-  height:5vh;
+  height:7vh;
 }
 
   .menu{
@@ -664,12 +664,13 @@ transition-duration: 2s;
   }
 
   #intro{
-    height:800px;
-    padding: 35% 0;
+    height:600px;
+    padding: 50% 0 0 0;
+    font-size: 90%;
    }
   #intro button{
-    width: 23%;
-    height: 15%;
+    width: 25%;
+    height: 6%;
   }
 
    #features{
@@ -696,25 +697,79 @@ transition-duration: 2s;
     padding: 10% 5%;
     background-color: #706073;
   }
+  #about{
+  box-sizing: border-box;
+   text-align:center;
+  font-size: 105%;
+   line-height: 150%;
+   padding:3%;
+  }
+
+  #about h2{
+  }
+
+   #about p{
+     width: 95%;
+     margin: 0 auto;
+   }
+
+  #start{
+
+    padding: 10% 5%;
+  }
+#start h2{
+  font-size: 90%;
+}
+
+   .start-img{
+     width: 55%;
+     float:none ;
+     padding :0;
+     margin: 0 auto;
+   }
+
+   .steps-parent{
+     padding-top: 5%;
+     float: none;
+     width:100%;
+       margin-bottom: 6%;
+   }
 
 
-    #start-img{
-      width: 38%;
-      margin-top: 20%;
-      padding : 20% 0 0 0;
+  .text{
+  font-size: 100%;
+  line-height:70px;
+  grid-column: 2/6;
+  }
 
-    }
-    #start-img img{
-      margin-top: 20%;
-    }
+  #start button{
 
-   #start button{
+  width: 35%;
+}
+
+   #campuses{
+     clear: both;
    display: block;
-   clear: both;
-   float: none;
-   width: 20%;
-    padding:2%;
-   margin: 15% auto 1% auto;
+   padding: 2% 5%;
+   margin: 0;
+
+   grid-template-columns: repeat(4,1fr);
+   }
+
+   #campuses h2{
+    font-size: 80%;
+   }
+
+   .campus{
+    background-color: #fff;
+    margin: 1%;
+    padding:5% 3%;
+    line-height: 120%;
+
+   }
+   .campus img{
+    width: 100%;
+    border-radius: 3%;
    }
 
   #testimonials{
@@ -728,29 +783,50 @@ transition-duration: 2s;
     width: 7%;
 }
 
-    #contact{
-
-    padding-top:5%;
-  }
-
-
-  #contact form{
-    margin-top: 45%;
-    width: 100%;
-  }
-  #contact input,textarea{
-    width: 90%;
-    height: 5%;
-    margin:3% auto;
-  }
-
-#contact textarea{
-  height: 20%;
+#contact{
+ display: block;
+ padding :5% 0;
+ margin: 0 auto;
 }
-#contact button{
-  margin-top: 10%;
+#contact .text{
+ width: 90%;
+text-align:center;
+line-height: 120%;
 }
-  #footer{
+
+#contact .text p{
+  text-align: center;
+font-size: 100%;
+padding-left: 10%;
+margin: 0 auto;
+}
+
+#contact form{
+ margin: 0 auto;
+width: 80%;
+padding-left: 5%;
+}
+
+#contact input,textarea{
+width: 90%;
+height: 10%;
+margin:3% auto;
+padding-left: 2%;
+}
+
+textarea{
+resize: none;
+height: 25%;
+}
+
+#contact form button{
+width: 30%;
+display: block;
+margin: 0 auto;
+text-align: center;
+height: 7%;
+}
+   #footer{
     background-color:#706073;
 
     padding: 7% 1%;
@@ -771,7 +847,7 @@ transition-duration: 2s;
   }
   .footer-div,.newsletter{
   width: 70%;
-  margin: 5% auto;
+  margin: 10% auto;
   }
 
    #footer h3{
@@ -783,8 +859,8 @@ transition-duration: 2s;
 
   .newsletter input{
   margin: 3% auto;
-  width:70%;
-  height:8%;
+  width:80%;
+  height:9%;
   padding: 2%;
 }
 
