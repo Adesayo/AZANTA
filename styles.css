@@ -797,12 +797,12 @@ transition-duration: 2s;
   height:7vh;
 }
 .trigger{
-  padding:3%;
+  padding:1% 3%;
   margin: ;
   font-size:200%;
 }
-  .menu{
-  margin-top:0;
+  .sidebar ul{
+  margin-top:10%;
   }
 
   #jumbbotron{
@@ -821,25 +821,20 @@ transition-duration: 2s;
 
 
   .intro button{
+    font-size: 100%;
     width: 50%;
     height: 4%;
-    padding: 1%;
+    padding: 3% 1%;
     margin-top: 15%;
     margin-bottom: %;
   }
 
-   #features{
-
-    height: auto;
-
-     padding: 5% 5% 8% 5%;
+   .feature{
+    padding: 1%;
    }
-  #features p{
-    line-height: 120%;
-  }
-
-
-
+   #about{
+     padding: 10%;
+   }
   #about h2{
 
     text-align:center;
@@ -916,7 +911,7 @@ transition-duration: 2s;
   #testimonials{
 
     background-color: rgba(180, 186, 190, 0.1);
-    padding: 5% 10%;
+    padding: 20% 10%;
     color: #000;
   }
 
@@ -1040,3 +1035,4 @@ height: 7%;
 
 
 /*  */
+
