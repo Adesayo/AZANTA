@@ -1,42 +1,101 @@
-*{
+ @import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+
+ *{
   outline: none;
-}
-body{
-  background-image:-webkit-linear-gradient( top left,rgba(186, 185, 185, 0.5),rgba(98, 36, 59, 0.5) );
+  box-sizing: border-box;
 }
 
-  form{
-  width: 70%;
-  background-color:#fffaf0 ;
+#container{
+  width:50%;
+  border-radius: 2em;
   margin: 0 auto;
 }
+
+body{
+background:url("abuja.jpg");
+background-repeat: repeat;
+color:#fff;
+
+}
+
+form{
+width: 100%;
+box-sizing: ;
+padding-top: 10%;
+ }
+
+
 fieldset{
   border: none;
+  background-color: rgba(0, 0, 0, 0.5);
   margin-bottom: 6%;
+  padding: 5%;
 }
 legend{
-  background-color:#e96651;
+  width: 100%;
+  box-sizing: border-box;
+  padding:12%;
+  margin-bottom: 3%;
+  font-size: 130%;
+
+
 }
 label{
-  text-align: right;
-  font-size: 120%;
+display:block;
+  font-size:;
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
+
 }
-input{
-  margin: 3% 0;
-  width: 70%;
-  border: 1px solid #555;
+
+input, select{
+margin-bottom: 3%;
+  width:100%;
+  background: transparent;
+  box-sizing: border-box;
+  border:0;
+  border-bottom: 3px solid #b84030;
   padding: 2%;
+  transition: all .5s;
+}
+input[type="radio"]{
+  margin:2%;
+  padding:0;
+  width:auto;
+
+}
+select{
+  border-bottom: 2px solid #b84030;
+}
+input:focus{
+  border-bottom: 1px solid #b84030;
+  padding: 4%;
 }
 
+button{
+  float: right;
+  padding: 3% 4%;
+  font-size: 120%;
+  border: none;
+  background-color: #b84030;
+  border-radius: 1em;
+  margin-bottom: 15%;
+  transition: all .5s;
+}
+button:hover{
+  background-color: #dde2e5;
+}
+@media(min-width:481px) and (max-width:900px) {
+  #container{
+    width:80%;
+}
+}
 
-
-
-
-
-
-
-
-
+@media(max-width:480px) {
+  #container{
+    width:90%;
+  }
+}
 
 
 
