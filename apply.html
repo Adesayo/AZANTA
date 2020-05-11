@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="apply.css" />
   </head>
   <body>
+    <div id="container">
 
-  <h4>Sign up for a Course</h4>
   <form>
     <label> Select a course</label>
     <select id="dept">
@@ -18,57 +18,73 @@
     <option value="Public Health">Public Health</option>
   </select>
 
-<fieldset>
-  <legend>Your details</legend>
- <label for="name">Name:</label>
-<input id="name" class="in" type="text" placeholder="First name"/>
-<input id="name" class="in" type="text" placeholder="Last name"/>
+
+  <div class="details">
+
+<fieldset  class=" ">
+  <div class="">
+<label for="firstName">First Name:<sup>*</sup></label>
+<input id="firstName" class="in" type="text" placeholder="First name"/>
+</div>
+<div class=" ">
+<label for="lastName">Last Name:<sup>*</sup></label>
+<input id="lastName" class="in" type="text" placeholder="Last name"/>
+</div>
 <br>
 
-<label for="email">Email:</label>
-<input id="email" class="in" type="text" placeholder="Your Email"/>
-<br>
+<label for="email">Email:<sup>*</sup> </label>
+<input id="email"  type="text" placeholder="Your Email"/>
 
-<label for="number">Contact phone:</label>
+<label for="number">Contact phone:<sup>*</sup></label>
 <input id="number" class="in" type="text" placeholder="Your phone number" />
 <br>
+<label for="gender">gender</label>
+<br>
+<input type="radio" name="gender"/ value="female" checked="checked">Female
 
-<label for="dob">Date of birth</label>
-<input id="dob" class="in" type="date" />
+<br>
 
+<input type="radio" name="gender"/ value="male">Male
 </fieldset>
 
+
 <fieldset>
-<legend>Your address</legend>
-<label for="home-address">Home address:</label>
+<label for="home-address">Home address:<sup>*</sup></label>
 <input id="home-address" class="in" type="text" placeholder="Your address" />
 <br>
 <label for="city">City:</label>
 <input id="city" class="in" type="text" placeholder="city" />
 <br>
-<label for="postal-code">Postal code </label>
+<label for="postal-code">Postal code:<sup>*</sup> </label>
 <input id="postal-code" class="in" type="text" placeholder="Postal code" />
 <br>
 
-<label for="country"> Country</label>
+<label for="country"> Country:<sup>*</sup></label>
 <select id="country">
+  <option value="Select country" disabled selected value="0"></option>
+  <option value="">Nigeria</option>
+  <option value="Kenya">Kenya</option>
+  <option value="Ghana">Ghana</option>
 </select>
 <br>
 </fieldset>
+
+
 <fieldset>
-  <legend>Academic information</legend>
-  <label for="qualification">Highest qualification</label>
+  <label for="qualification">Highest qualification:<sup>*</sup></label>
   <select id="qualification" name="">
 
   </select>
   <br>
-  <label for="insttiute">Institute name</label>
+  <label for="insttiute">Institute name:<sup>*</sup></label>
   <input id="insttiute" class="in" type="text" placeholder="Insttiute name" />
 
 </fieldset>
 
 <button> Submit </button>
 </form>
+</div>
+
       </body>
 
 
